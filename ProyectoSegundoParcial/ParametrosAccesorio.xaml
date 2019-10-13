@@ -1,0 +1,51 @@
+﻿<UserControl x:Class="ProyectoSegundoParcial.ParametrosAccesorio"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ProyectoSegundoParcial"
+                         mc:Ignorable="d" 
+             d:DesignHeight="304.4" d:DesignWidth="658.4">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Código:" VerticalAlignment="Top" Foreground="White" FontSize="16"/>
+        <TextBox x:Name="PSudaCodigo" HorizontalAlignment="Left" Height="23" Margin="70,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="127" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,64,0,0" TextWrapping="Wrap" Text="Descripción:" VerticalAlignment="Top" Foreground="White" FontSize="16"/>
+        <TextBox x:Name="PSudaDescrip" HorizontalAlignment="Left" Height="23" Margin="101,64,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="219" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,114,0,0" TextWrapping="Wrap" Text="Precio:" VerticalAlignment="Top" Foreground="White" FontSize="16"/>
+        <TextBox x:Name="PSudaPrecio" HorizontalAlignment="Left" Height="23" Margin="71,114,0,0" TextWrapping="Wrap" Text="0.00" VerticalAlignment="Top" Width="60" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="62,114,0,0" TextWrapping="Wrap" Text="$" VerticalAlignment="Top" Foreground="White" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,161,0,0" TextWrapping="Wrap" Text="Colección:" VerticalAlignment="Top" Foreground="White" FontSize="16"/>
+        <TextBox x:Name="PSudaCole" HorizontalAlignment="Left" Height="23" Margin="87,161,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="233" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,210,0,0" TextWrapping="Wrap" Text="Temporada:" VerticalAlignment="Top" Foreground="White" FontSize="16"/>
+        <RadioButton x:Name="PSudaR1" Content="Invierno" HorizontalAlignment="Left" Margin="112,215,0,0" VerticalAlignment="Top" FontSize="14" Background="White" Foreground="White"/>
+        <RadioButton x:Name="PSudaR2" Content="Primavera" HorizontalAlignment="Left" Margin="220,214,0,0" VerticalAlignment="Top" FontSize="14" Background="White" Foreground="White"/>
+        <RadioButton x:Name="PSudaR3" Content="Verano" HorizontalAlignment="Left" Margin="112,238,0,0" VerticalAlignment="Top" FontSize="14" Background="White" Foreground="White"/>
+        <RadioButton x:Name="PSudaR4" Content="Otoño" HorizontalAlignment="Left" Margin="220,238,0,0" VerticalAlignment="Top" FontSize="14" Background="White" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Left" Margin="353,10,0,0" TextWrapping="Wrap" Text="Marca:" VerticalAlignment="Top" Foreground="White" FontSize="16"/>
+        <ComboBox x:Name="PSudaCombo" SelectedIndex="0" HorizontalAlignment="Left" Margin="405,11,0,0" VerticalAlignment="Top" Width="233">
+            <ComboBoxItem x:Name="PSudaCBDefa" Visibility="Hidden">XXXXX</ComboBoxItem>
+            <ComboBoxItem>Viz</ComboBoxItem>
+            <ComboBoxItem>Bandai</ComboBoxItem>
+            <ComboBoxItem>Heredia</ComboBoxItem>
+            <ComboBoxItem>Coach</ComboBoxItem>
+            <ComboBoxItem>RedButton</ComboBoxItem>
+            <ComboBoxItem>Official Trademark</ComboBoxItem>
+            <ComboBoxItem>Mizuno</ComboBoxItem>
+            <ComboBoxItem>Otros</ComboBoxItem>
+            <ComboBoxItem>Sin Registrar</ComboBoxItem>
+        </ComboBox>
+        <TextBlock HorizontalAlignment="Left" Margin="353,64,0,0" TextWrapping="Wrap" Text="Talla:" VerticalAlignment="Top" Foreground="White" FontSize="16"/>
+        <CheckBox x:Name="PSudaB1" Content="XS" HorizontalAlignment="Left" Margin="413,69,0,0" VerticalAlignment="Top" Foreground="White" FontSize="14"/>
+        <CheckBox x:Name="PSudaB2" Content="S" HorizontalAlignment="Left" Margin="480,69,0,0" VerticalAlignment="Top" Foreground="White" FontSize="14"/>
+        <CheckBox x:Name="PSudaB3" Content="M" HorizontalAlignment="Left" Margin="536,68,0,0" VerticalAlignment="Top" Foreground="White" FontSize="14"/>
+        <CheckBox x:Name="PSudaB4" Content="L" HorizontalAlignment="Left" Margin="597,69,0,0" VerticalAlignment="Top" Foreground="White" FontSize="14"/>
+        <CheckBox x:Name="PSudaB5" Content="XL" HorizontalAlignment="Left" Margin="413,100,0,0" VerticalAlignment="Top" Foreground="White" FontSize="14"/>
+        <CheckBox x:Name="PSudaB6" Content="XXL" HorizontalAlignment="Left" Margin="480,100,0,0" VerticalAlignment="Top" Foreground="White" FontSize="14"/>
+        <CheckBox x:Name="PSudaB7" Content="XXXL" HorizontalAlignment="Left" Margin="536,100,0,0" VerticalAlignment="Top" Foreground="White" FontSize="14"/>
+        <TextBlock HorizontalAlignment="Left" Margin="353,144,0,0" TextWrapping="Wrap" Text="Para:" VerticalAlignment="Top" Foreground="White" FontSize="16"/>
+        <CheckBox x:Name="PSudaC1" Content="Hombre" HorizontalAlignment="Left" Margin="405,151,0,0" VerticalAlignment="Top" Foreground="White" FontSize="14"/>
+        <CheckBox x:Name="PSudaC2" Content="Mujer" HorizontalAlignment="Left" Margin="498,151,0,0" VerticalAlignment="Top" Foreground="White" FontSize="14"/>
+        <CheckBox x:Name="PSudaC3" Content="Unisex" HorizontalAlignment="Left" Margin="405,180,0,0" VerticalAlignment="Top" Foreground="White" FontSize="14"/>
+
+    </Grid>
+</UserControl>
